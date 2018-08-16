@@ -14,10 +14,12 @@ Package.onUse(function (api) {
   api.use('deps',         client)
   api.use('templating',   client)
   api.use('underscore',   client)
+  api.use('modules',   both)
   api.use('reactive-var', client)
 
-  api.use('tap:i18n@1.7.0', both)
+  api.use('tap:i18n@2.0.0', both)
   api.imply('tap:i18n')
+  api.addFiles('package-tap.i18n', ['client', 'server']);
 
   api.addFiles('lib/status.html',            client)
   api.addFiles('templates/bootstrap3.html',  client)
