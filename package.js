@@ -14,7 +14,7 @@ Package.onUse(function (api) {
   api.use('deps',         client)
   api.use('templating',   client)
   api.use('underscore',   client)
-  api.use('modules',   both)
+  api.use('ecmascript',   both)
   api.use('reactive-var', client)
 
   api.use('tap:i18n@2.0.0', both)
