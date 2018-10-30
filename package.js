@@ -23,6 +23,7 @@ Package.onUse(function (api) {
 
   api.addFiles('lib/status.html',            client)
   api.addFiles('templates/bootstrap3.html',  client)
+  api.addFiles('templates/exentriq.html',  client)
   api.addFiles('templates/semantic_ui.html', client)
   api.addFiles('templates/materialize.html', client)
   api.addFiles('templates/uikit.html',       client)
