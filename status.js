@@ -1,4 +1,4 @@
-var template = new ReactiveVar('bootstrap3')
+var template = new ReactiveVar('exentriq')
 var options  = new ReactiveVar({})
 var defaults = {
   classes: {
