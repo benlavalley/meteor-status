@@ -1,0 +1,23 @@
+<template name="status_semantic_ui">
+    {{#unless connected}}
+        {{#unless connecting}} <!-- showing connecting is super annoying when the app is loading. disabling...-->
+            {{#unless message $eq 'Connecting...'}}
+                {{#if connecting}}
+                    <p>CONNECTING.</p>
+                {{else}}
+                    <div class="ui {{option 'classes'}} message animated fadeIn">
+                        <div class="content">
+                            <div class="header">
+                                {{message}} &nbsp;
+                                {{extraMessage}}
+                                {{#if showReconnect}}
+                                    <a href="#" class="alert-link">{{reconnectLabel}}</a>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                {{/if}}
+            {{/unless}}
+        {{/unless}}
+    {{/unless}}
+</template>

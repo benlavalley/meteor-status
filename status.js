@@ -1,26 +1,28 @@
-var template = new ReactiveVar('exentriq')
-var options  = new ReactiveVar({})
-var defaults = {
-  classes: {
-    bootstrap3:  'alert-warning',
-    semantic_ui: 'negative',
-    uikit:       'warning',
-    foundation:  'warning'
-  }
-}
+import { ReactiveVar } from 'meteor/reactive-var';
 
-Status = {
-  template: function () {
-    return template.get()
-  },
+const template = new ReactiveVar('bootstrap3');
+const options = new ReactiveVar({});
+const defaults = {
+	classes: {
+		bootstrap3: 'alert-warning',
+		semantic_ui: 'negative',
+		uikit: 'warning',
+		foundation: 'warning',
+	},
+};
 
-  option: function (option) {
-    return options.get()[option] || defaults[option][template.get()]
-  },
+export const Status = {
+	template() {
+		return template.get();
+	},
 
-  setTemplate: function (name, _options) {
-    template.set(name)
+	option(option) {
+		return options.get()[option] || defaults[option][template.get()];
+	},
 
-    if (_options) options.set(_options)
-  }
-}
+	setTemplate(name, _options) {
+		template.set(name);
+
+		if (_options) options.set(_options);
+	},
+};
