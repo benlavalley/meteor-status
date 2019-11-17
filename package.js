@@ -25,24 +25,24 @@ Package.onUse(function (api) {
 	api.addFiles('templates/semantic_ui.html', client);
 
 	// Always after templates
-	api.addFiles('i18n/meteorStatus.cn.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.cs.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.da.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.de.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.en.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.es.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.et.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.fr.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.id.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.it.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.ms.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.nl.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.pt.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.ru.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.tr.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.vi.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.zh.i18n.json', both);
-	api.addFiles('i18n/meteorStatus.zh-TW.i18n.json', both);
+	api.addFiles('i18n/cn.i18n.json', both);
+	api.addFiles('i18n/cs.i18n.json', both);
+	api.addFiles('i18n/da.i18n.json', both);
+	api.addFiles('i18n/de.i18n.json', both);
+	api.addFiles('i18n/en.i18n.json', both);
+	api.addFiles('i18n/es.i18n.json', both);
+	api.addFiles('i18n/et.i18n.json', both);
+	api.addFiles('i18n/fr.i18n.json', both);
+	api.addFiles('i18n/id.i18n.json', both);
+	api.addFiles('i18n/it.i18n.json', both);
+	api.addFiles('i18n/ms.i18n.json', both);
+	api.addFiles('i18n/nl.i18n.json', both);
+	api.addFiles('i18n/pt.i18n.json', both);
+	api.addFiles('i18n/ru.i18n.json', both);
+	api.addFiles('i18n/tr.i18n.json', both);
+	api.addFiles('i18n/vi.i18n.json', both);
+	api.addFiles('i18n/zh.i18n.json', both);
+	api.addFiles('i18n/zh-TW.i18n.json', both);
 
 
 	api.mainModule('status.js', client);
