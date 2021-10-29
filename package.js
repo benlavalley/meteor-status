@@ -9,7 +9,7 @@ Package.onUse(function (api) {
 	const client = 'client';
 	const both = ['client', 'server'];
 
-	api.versionsFrom('1.8.2');
+	api.versionsFrom('2.5');
 
 	api.use('tracker', client);
 	api.use('templating', client);
